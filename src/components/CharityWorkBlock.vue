@@ -1,10 +1,11 @@
 <template>
     <article>
-        <span class="icon solid">
+        <!-- <span class="icon solid">
             <font-awesome-icon class="fa-icon" size="lg" :icon="activity.icon" />
-        </span>
+        </span> -->
         <div class="content">
-            <h3>{{activity.title}}</h3>
+                <!-- eslint-disable-next-line -->
+            <h3><font-awesome-icon class="fa-icon" size="lg" :icon="activity.icon" />&nbsp; {{activity.title}}</h3>
             <p>{{activity.text}}</p>
         </div>
     </article>
