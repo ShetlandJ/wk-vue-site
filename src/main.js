@@ -2,6 +2,9 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faTwitter, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import {
+  faHospital, faUserFriends, faDumbbell, faCalendarPlus, faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
 import routes from './routes';
 
 import App from './App.vue';
@@ -11,6 +14,11 @@ Vue.use(VueRouter);
 
 library.add(faTwitter);
 library.add(faFacebook);
+library.add(faHospital);
+library.add(faUserFriends);
+library.add(faDumbbell);
+library.add(faCalendarPlus);
+library.add(faEnvelope);
 
 const router = new VueRouter({
   mode: 'history',

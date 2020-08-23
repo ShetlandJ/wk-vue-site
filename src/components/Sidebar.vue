@@ -18,95 +18,54 @@
                     <router-link class="router-link" to="/about">
                         <a>About</a>
                     </router-link>
-                    <li>
-                        <a href="elements.html">Elements</a>
-                    </li>
-                    <li>
-                        <span class="opener">Submenu</span>
-                        <ul>
-                            <li>
-                                <a href="#">Lorem Dolor</a>
-                            </li>
-                            <li>
-                                <a href="#">Ipsum Adipiscing</a>
-                            </li>
-                            <li>
-                                <a href="#">Tempus Magna</a>
-                            </li>
-                            <li>
-                                <a href="#">Feugiat Veroeros</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Etiam Dolore</a>
-                    </li>
-                    <li>
-                        <a href="#">Adipiscing</a>
-                    </li>
-                    <li>
-                        <span class="opener">Another Submenu</span>
-                        <ul>
-                            <li>
-                                <a href="#">Lorem Dolor</a>
-                            </li>
-                            <li>
-                                <a href="#">Ipsum Adipiscing</a>
-                            </li>
-                            <li>
-                                <a href="#">Tempus Magna</a>
-                            </li>
-                            <li>
-                                <a href="#">Feugiat Veroeros</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Maximus Erat</a>
-                    </li>
-                    <li>
-                        <a href="#">Sapien Mauris</a>
-                    </li>
-                    <li>
-                        <a href="#">Amet Lacinia</a>
-                    </li>
+
+                    <router-link class="router-link" to="/our-work">
+                        <a>Our Work</a>
+                    </router-link>
                 </ul>
             </nav>
 
             <!-- Section -->
             <section>
                 <header class="major">
-                    <h2>Get in touch</h2>
+                    <h2 class="get-in-touch-text">Get in touch</h2>
                 </header>
-                <p>facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                <ul class="contact">
-                    <li class="icon solid fa-envelope">
-                        <a href="#">information@untitled.tld</a>
-                    </li>
-                    <li class="icon solid fa-phone">(000) 000-0000</li>
-                    <li class="icon solid fa-home">
-                        1234 Somewhere Road #8254
-                        <br />Nashville, TN 00000-0000
-                    </li>
-                </ul>
+                <!-- eslint-disable-next-line -->
+                <p>Do you know someone who would benefit from our service? We'd love to hear from you.</p>
             </section>
 
-            <!-- Footer -->
+            <div>
+                <a href="mailto:james@wrestlekind.org">
+                    <font-awesome-icon size="lg" icon="envelope" />&nbsp; james@wrestlekind.org
+                </a>
+                <br />
+                <a href="https://www.twitter.com/WrestleKind">
+                    <font-awesome-icon size="lg" :icon="['fab', 'twitter']" />&nbsp; @WrestleKind
+                </a>
+                <br />
+                <a href="https://www.facebook.com/wrestlekind">
+                    <font-awesome-icon size="lg" :icon="['fab', 'facebook']" />&nbsp; /wrestlekind
+                </a>
+            </div>
+
             <footer id="footer">
                 <p class="copyright">
-                    &copy; Untitled. All rights reserved. Demo Images:
-                    <a
-                        href="https://unsplash.com"
-                    >Unsplash</a>. Design:
-                    <a href="https://html5up.net">HTML5 UP</a>.
+                    &copy; WrestleKind 2020
                 </p>
             </footer>
+
+            <!-- Footer -->
         </div>
     </div>
 </template>
 
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 export default {
+  components: {
+    FontAwesomeIcon,
+  },
   props: {
     showMenu: {
       type: Boolean,
@@ -138,6 +97,14 @@ export default {
 }
 
 .router-link {
-    border-top: solid 1px rgba(210, 215, 217, 0.75)
+    border-top: solid 1px rgba(210, 215, 217, 0.75);
+}
+
+.get-in-touch-text {
+    margin-bottom: 10px !important;
+}
+
+li {
+    padding-left: 0;
 }
 </style>

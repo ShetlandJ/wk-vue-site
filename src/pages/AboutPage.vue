@@ -4,15 +4,13 @@
             <div class="content">
                 <header>
                     <h1>{{person.name}}</h1>
-                    <!-- eslint-disable-next-line -->
-                    <p class="subheadline">Role</p>
+                    <p class="subheadline">{{person.role}}</p>
                 </header>
 
-                <p>
-                    <!-- eslint-disable-next-line -->
-                    {{person.text}}
-                </p>
-                <a href="#" class="button big">SOCIAL MEDIAS</a>
+                  <!-- eslint-disable-next-line -->
+                <p v-html="person.text"/>
+
+                <social-media-icon-row :options="person.socialMedia" />
             </div>
             <span class="image object">
                 <img :src="getImgUrl(person.img)" alt />
@@ -22,7 +20,12 @@
 </template>
 
 <script>
+import SocialMediaIconRow from '../components/SocialMediaIconRow.vue';
+
 export default {
+  components: {
+    SocialMediaIconRow,
+  },
   methods: {
     getImgUrl(pic) {
       // eslint-disable-next-line
@@ -34,24 +37,38 @@ export default {
       profiles: [
         {
           id: 1,
+          role: 'Founder',
           name: 'Lee Greig',
           img: 'jj.jpg',
           text:
-                        'Performing as Jack Jester, Lee is a stalwart of the British wrestling scene, with over 16 years of wrestling experience across the UK as a performer, promoter and trainer. As a performer, Jack is best known for his time with Glasgow based ICW, and has been the main promoter of Wrestle Experience Scotland since 2017. Additionally, Jack works with the Asylum wrestling school as a trainer.',
+                        'Performing as <b>Jack Jester</b>, Lee is a stalwart of the British wrestling scene, with over 16 years of wrestling experience across the UK as a performer, promoter and trainer. As a performer, Jack is best known for his time with Glasgow based ICW, and has been the main promoter of Wrestle Experience Scotland since 2017. Additionally, Jack works with the Asylum wrestling school as a trainer.',
+          socialMedia: {
+            twitter: '@GlasgowJester',
+            facebook: 'GlasgowJester',
+          },
         },
         {
           id: 2,
+          role: 'Founder',
           name: 'Kimberly Benson',
           img: 'v.png',
           text:
-                        'Performing as Viper or Piper Niven, Kim became one of the first Scottish female wrestlers to work for global wrestling giant World Wrestling Entertainment when she joined their NXT UK brand in 2019, having performed in three matches for the company in 2017. She is an international performer, having also worked in Japan. She is currently a full time employee of WWE and also trains wrestlers at the Asylum in Glasgow.',
+                        'Performing as <b>Viper</b> or <b>Piper Niven</b>, Kim became one of the first Scottish female wrestlers to work for global wrestling giant World Wrestling Entertainment when she joined their NXT UK brand in 2019, having performed in three matches for the company in 2017. She is an international performer, having also worked in Japan. She is currently a full time employee of WWE and also trains wrestlers at the Asylum in Glasgow.',
+          socialMedia: {
+            twitter: '@viperpiperniven',
+            facebook: 'ViperWrestling',
+          },
         },
         {
           id: 3,
+          role: 'Founder',
           name: 'James Stewart',
           img: 'js.png',
           text:
                         "James is a software developer and experienced charity professional. James's previous charitable positions include as Chair of the Shetland Skatepark Association (2011-2012) where he led the group to raise £200,000 for a skatepark in the Shetland Islands and as founder and Chair of Get-Well Gamers UK (2014-2019), a charity that delivered video games and consoles to sick kids in hospital.",
+          socialMedia: {
+            twitter: '@JAStewart',
+          },
         },
       ],
     };

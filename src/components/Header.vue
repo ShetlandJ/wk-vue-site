@@ -2,24 +2,26 @@
     <header id="header">
         <div>
             <img src="@/assets/logo.png" class="logo-img" />
-            <ul class="icons">
-                <li>
-                    <font-awesome-icon :icon="['fab', 'twitter']" />
-                </li>
-                <li>
-                    <font-awesome-icon :icon="['fab', 'facebook']" />
-                </li>
-            </ul>
+
+            <social-media-icon-row :options="socialMedia" />
         </div>
     </header>
 </template>
 
 <script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import SocialMediaIconRow from './SocialMediaIconRow.vue';
 
 export default {
   components: {
-    FontAwesomeIcon,
+    SocialMediaIconRow,
+  },
+  data() {
+    return {
+      socialMedia: {
+        twitter: '@WrestleKind',
+        facebook: 'wrestlekind',
+      },
+    };
   },
 };
 </script>
