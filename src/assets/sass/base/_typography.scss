@@ -31,7 +31,7 @@
 			'color #{_duration(transition)} ease-in-out',
 			'border-bottom-color #{_duration(transition)} ease-in-out'
 		));
-		border-bottom: dotted 1px;
+		// border-bottom: dotted 1px;
 		color: _palette(accent);
 		text-decoration: none;
 
@@ -184,4 +184,17 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	.small-bottom {
+		margin-bottom: 15px;
+	}
+
+	.no-bottom {
+		padding-bottom: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	.small-text {
+		font-size: 0.80rem;
 	}

@@ -35,7 +35,7 @@
 	}
 
 	#sidebar {
-		height: 100vh;
+		height: 100%;
 		$pad: 2em / 0.9;
 
 		@include vendor('flex-grow', '0');

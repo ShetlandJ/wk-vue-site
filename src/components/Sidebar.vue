@@ -11,15 +11,15 @@
                     <h2 class="menu-text">Menu</h2>
                 </header>
                 <ul>
-                    <router-link class="router-link" to="/">
+                    <router-link class="router-link" @click.native="menuItemClicked" to="/">
                         <a>Home</a>
                     </router-link>
 
-                    <router-link class="router-link" to="/about">
-                        <a>About</a>
+                    <router-link class="router-link" @click.native="menuItemClicked" to="/about">
+                        <a>The Team</a>
                     </router-link>
 
-                    <router-link class="router-link" to="/our-work">
+                    <router-link class="router-link" @click.native="menuItemClicked" to="/our-work">
                         <a>Our Work</a>
                     </router-link>
                 </ul>
@@ -35,23 +35,21 @@
             </section>
 
             <div>
-                <a href="mailto:james@wrestlekind.org">
+                <a class="external-link" href="mailto:james@wrestlekind.org">
                     <font-awesome-icon size="lg" icon="envelope" />&nbsp; james@wrestlekind.org
                 </a>
                 <br />
-                <a href="https://www.twitter.com/WrestleKind">
+                <a class="external-link" href="https://www.twitter.com/WrestleKind">
                     <font-awesome-icon size="lg" :icon="['fab', 'twitter']" />&nbsp; @WrestleKind
                 </a>
                 <br />
-                <a href="https://www.facebook.com/wrestlekind">
+                <a class="external-link" href="https://www.facebook.com/wrestlekind">
                     <font-awesome-icon size="lg" :icon="['fab', 'facebook']" />&nbsp; /wrestlekind
                 </a>
             </div>
 
             <footer id="footer">
-                <p class="copyright">
-                    &copy; WrestleKind 2020
-                </p>
+                <p class="copyright">&copy; WrestleKind 2020</p>
             </footer>
 
             <!-- Footer -->
@@ -74,6 +72,13 @@ export default {
     smallWindow: {
       type: Boolean,
       default: false,
+    },
+  },
+  methods: {
+    menuItemClicked() {
+      if (this.smallWindow) {
+        this.showMenu = false;
+      }
     },
   },
 };
@@ -106,5 +111,9 @@ export default {
 
 li {
     padding-left: 0;
+}
+
+.external-link {
+    font-size: 18px;
 }
 </style>

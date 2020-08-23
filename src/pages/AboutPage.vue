@@ -1,5 +1,6 @@
 <template>
     <div>
+      <h2 class="no-bottom">The Team</h2>
         <section id="banner" v-for="person in profiles" :key="person.id">
             <div class="content">
                 <header>
@@ -7,7 +8,7 @@
                     <p class="subheadline">{{person.role}}</p>
                 </header>
 
-                  <!-- eslint-disable-next-line -->
+                <!-- eslint-disable-next-line -->
                 <p v-html="person.text"/>
 
                 <social-media-icon-row :options="person.socialMedia" />
