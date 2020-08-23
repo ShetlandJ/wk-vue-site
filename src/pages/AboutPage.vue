@@ -64,7 +64,7 @@ export default {
           id: 3,
           role: 'Founder',
           name: 'James Stewart',
-          img: 'js.jpg',
+          img: 'js.png',
           text:
                         "James is a software developer and experienced charity professional. James's previous charitable positions include as Chair of the Shetland Skatepark Association (2011-2012) where he led the group to raise £200,000 for a skatepark in the Shetland Islands and as founder and Chair of Get-Well Gamers UK (2014-2019), a charity that delivered video games and consoles to sick kids in hospital.",
           socialMedia: {
