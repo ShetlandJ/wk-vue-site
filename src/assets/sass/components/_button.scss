@@ -63,6 +63,10 @@
 			line-height: 3.65em;
 		}
 
+		&.wide {
+			width: 100%;
+		}
+
 		&.primary {
 			background-color: _palette(accent);
 			box-shadow: none;
