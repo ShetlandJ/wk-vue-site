@@ -1,6 +1,6 @@
 <template>
     <div>
-      <h2 class="no-bottom">The Team</h2>
+      <h2 class="no-bottom container">The Team</h2>
         <section id="banner" v-for="person in profiles" :key="person.id">
             <div class="content">
                 <header>
@@ -77,5 +77,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.container {
+  padding-top: 20px !important;
+}
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="container">
         <header class="major">
             <h2>What We Do</h2>
             <div class="small-bottom">
@@ -70,3 +70,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.container {
+  padding-top: 20px !important;
+}
+</style>
