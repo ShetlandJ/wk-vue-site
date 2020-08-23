@@ -54,7 +54,7 @@ export default {
           name: 'Kimberly Benson',
           img: 'v.jpg',
           text:
-                        'Performing as <b>Viper</b> or <b>Piper Niven</b>, Kim became one of the first Scottish female wrestlers to work for global wrestling giant World Wrestling Entertainment when she joined their NXT UK brand in 2019, having performed in three matches for the company in 2017. Having performend in American and Japan, she is an popular figure in the international scene. She is currently a full time employee of WWE and also trains wrestlers at the Asylum in Glasgow.',
+                        'Performing as <b>Viper</b> or <b>Piper Niven</b>, Kim became one of the first Scottish female wrestlers to work for global wrestling giant World Wrestling Entertainment when she joined their NXT UK brand in 2019, having performed in three matches for the company in 2017. A popular international figure, Kim has not only performed the length and breadth of the UK, she has also wrestled in American and Japan. She is currently a full time employee of WWE and also trains wrestlers in Scotland.',
           socialMedia: {
             twitter: '@viperpiperniven',
             facebook: 'ViperWrestling',
