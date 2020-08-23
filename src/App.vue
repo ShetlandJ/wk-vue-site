@@ -15,10 +15,14 @@
             <!-- Sidebar -->
             <div>
                 <h4 v-if="smallWindow">
-                    <a class="menu-button button-big" @click="showMenu = !showMenu">Menu</a>
+                    <a class="menu-button button-big" @click="showMenu = true">Menu</a>
                 </h4>
 
-                <sidebar :show-menu="showMenu" :small-window="smallWindow" />
+                <sidebar
+                    @hide-menu="showMenu = false"
+                    :show-menu="showMenu"
+                    :small-window="smallWindow"
+                />
             </div>
         </div>
     </div>

@@ -42,7 +42,7 @@ export default {
           name: 'Lee Greig',
           img: 'jj.jpg',
           text:
-                        'Performing as <b>Jack Jester</b>, Lee is a stalwart of the British wrestling scene, with over 16 years of wrestling experience across the UK as a performer, promoter and trainer. As a performer, Jack is best known for his time with Glasgow based ICW, and has been the main promoter of Wrestle Experience Scotland since 2017. Additionally, Jack works with the Asylum wrestling school as a trainer.',
+                        'Performing as <b>Jack Jester</b>, Lee is a stalwart of the British wrestling scene, with over 16 years of wrestling experience across the UK as a performer, promoter and trainer. As a performer, Lee is best known for his time with Glasgow based ICW, and has been the main promoter of Wrestle Experience Scotland since 2017. Additionally, Jack works with the Asylum wrestling school as a trainer.',
           socialMedia: {
             twitter: '@GlasgowJester',
             facebook: 'GlasgowJester',
@@ -54,7 +54,7 @@ export default {
           name: 'Kimberly Benson',
           img: 'v.png',
           text:
-                        'Performing as <b>Viper</b> or <b>Piper Niven</b>, Kim became one of the first Scottish female wrestlers to work for global wrestling giant World Wrestling Entertainment when she joined their NXT UK brand in 2019, having performed in three matches for the company in 2017. She is an international performer, having also worked in Japan. She is currently a full time employee of WWE and also trains wrestlers at the Asylum in Glasgow.',
+                        'Performing as <b>Viper</b> or <b>Piper Niven</b>, Kim became one of the first Scottish female wrestlers to work for global wrestling giant World Wrestling Entertainment when she joined their NXT UK brand in 2019, having performed in three matches for the company in 2017. Having performend in American and Japan, she is an popular figure in the international scene. She is currently a full time employee of WWE and also trains wrestlers at the Asylum in Glasgow.',
           socialMedia: {
             twitter: '@viperpiperniven',
             facebook: 'ViperWrestling',

@@ -3,7 +3,7 @@
             inactive: !showMenu,
         }">
         <div class="inner">
-            <h3 class="close-button" v-if="smallWindow" @click="showMenu = !showMenu">X</h3>
+            <h3 class="close-button" v-if="smallWindow" @click="$emit('hide-menu')">X</h3>
 
             <!-- Menu -->
             <nav id="menu">
@@ -77,7 +77,7 @@ export default {
   methods: {
     menuItemClicked() {
       if (this.smallWindow) {
-        this.showMenu = false;
+        this.$emit('hide-menu');
       }
     },
   },
@@ -103,6 +103,7 @@ export default {
 
 .router-link {
     border-top: solid 1px rgba(210, 215, 217, 0.75);
+    font-size: 0.90rem !important;
 }
 
 .get-in-touch-text {
