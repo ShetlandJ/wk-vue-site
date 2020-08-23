@@ -14,7 +14,7 @@
             <router-link href="#" to='our-work' class="button big">Our work</router-link>
         </div>
         <span class="image object">
-            <img src="@/assets/v.png" alt />
+            <img src="@/assets/v.jpg" alt />
         </span>
     </section>
 </template>
