@@ -10,6 +10,11 @@
                 <font-awesome-icon size="lg" :icon="['fab', 'facebook']" />
             </a>
         </li>
+        <li v-if="options.instagram">
+            <a :href="`https://www.instagram.com/${options.instagram}`" target="_blank">
+                <font-awesome-icon size="lg" :icon="['fab', 'instagram']" />
+            </a>
+        </li>
     </ul>
 </template>
 

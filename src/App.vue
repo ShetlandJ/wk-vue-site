@@ -70,7 +70,7 @@ export default {
 }
 
 .logo-img {
-    max-height: 125px;
+    max-height: 175px;
 }
 
 @media only screen and (max-width: 600px) {

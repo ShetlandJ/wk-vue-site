@@ -96,7 +96,7 @@ export default {
 .menu-text {
     padding: 0 !important;
     margin: 0 0 10px 0 !important;
-    border-bottom: solid 3px #f56a6a;
+    border-bottom: solid 3px #a13995;
     display: flex;
     justify-content: center;
 }

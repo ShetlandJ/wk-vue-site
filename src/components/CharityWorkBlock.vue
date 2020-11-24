@@ -29,6 +29,6 @@ export default {
 
 <style scoped>
 .fa-icon {
-    color: #f56a6a
+    color: #a13995
 }
 </style>
