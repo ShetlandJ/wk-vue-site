@@ -46,6 +46,10 @@
                 <a class="external-link" href="https://www.facebook.com/wrestlekind">
                     <font-awesome-icon size="lg" :icon="['fab', 'facebook']" />&nbsp; /wrestlekind
                 </a>
+                <br />
+                <a class="external-link" href="https://www.instagram.com/wrestlekind">
+                    <font-awesome-icon size="lg" :icon="['fab', 'instagram']" />&nbsp; /wrestlekind
+                </a>
             </div>
 
             <footer id="footer">
