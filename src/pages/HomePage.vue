@@ -17,9 +17,14 @@
                 with organisations and families to create unforgettable
                 experiences.
             </p>
-            <router-link href="#" to="our-work" class="button big wide"
-                >Our work</router-link
-            >
+
+            <router-link href="#" to="about" class="button big wide" style="margin-bottom: 10px">
+                Our team
+            </router-link>
+
+            <router-link href="#" to="our-work" class="button big wide">
+                Our work
+            </router-link>
         </div>
 
         <span class="image object">
