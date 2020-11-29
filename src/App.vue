@@ -45,12 +45,22 @@ export default {
     };
   },
   created() {
-    if (window.innerWidth <= 500) {
-      this.showMenu = false;
-      this.smallWindow = true;
-    } else {
-      this.showMenu = true;
-    }
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth <= 1300) {
+        this.showMenu = false;
+        this.smallWindow = true;
+      } else {
+        this.showMenu = true;
+        this.smallWindow = false;
+      }
+    },
   },
 };
 </script>
