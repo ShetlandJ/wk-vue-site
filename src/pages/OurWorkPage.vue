@@ -30,15 +30,23 @@
                 :activity="activity"
             />
         </div>
+
+        <hr />
+
+        <h2>What We Do</h2>
+
+        <homeless-fundraiser />
     </section>
 </template>
 
 <script>
 import CharityWorkBlock from '../components/CharityWorkBlock.vue';
+import HomelessFundraiser from '../components/HomelessFundraiser.vue';
 
 export default {
   components: {
     CharityWorkBlock,
+    HomelessFundraiser,
   },
   data() {
     return {
@@ -47,27 +55,31 @@ export default {
           id: 1,
           icon: ['fa', 'hospital'],
           // eslint-disable-next-line max-len
-          text: 'We arrange for groups for wrestlers to visit hospitals to entertain young patients',
+          text:
+                        'We arrange for groups for wrestlers to visit hospitals to entertain young patients',
           title: 'Hospital visits',
         },
         {
           id: 2,
           icon: ['fa', 'user-friends'],
           // eslint-disable-next-line max-len
-          text: 'Wrestlers visiting wrestling fans in their homes for a personal one-on-one experience',
+          text:
+                        'Wrestlers visiting wrestling fans in their homes for a personal one-on-one experience',
           title: 'Personal visits',
         },
         {
           id: 3,
           icon: ['fa', 'dumbbell'],
-          text: 'Letting individuals or groups get a photo shoot inside a real wrestling ring',
+          text:
+                        'Letting individuals or groups get a photo shoot inside a real wrestling ring',
           title: 'The Wrestling Experience',
         },
         {
           id: 4,
           icon: ['fa', 'calendar-plus'],
           // eslint-disable-next-line max-len
-          text: 'We run wrestling shows across the country where all proceeds go towards the people we help through WrestleKind',
+          text:
+                        'We run wrestling shows across the country where all proceeds go towards the people we help through WrestleKind',
           title: 'Charity wrestling shows',
         },
       ],
